@@ -1,0 +1,45 @@
+﻿<Window x:Class="Duck.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Duck"
+        mc:Ignorable="d"
+        Title="DuckPics" 
+        Height="480" 
+        Width="350"
+        ResizeMode="CanMinimize"
+        Icon="/icon.ico">
+
+    <StackPanel x:Name="stack" Orientation="Vertical">
+        <TextBlock
+            Text="Duck!"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="48"/>
+
+        <TextBlock
+            Text="API:"
+            FontSize="25"
+            Margin="15"
+            HorizontalAlignment="Center"
+            FontStyle="Normal"/>
+
+        <TextBlock
+            Text="https://random-d.uk/api/v2/random"
+            FontSize="15"
+            Margin="10"
+            HorizontalAlignment="Center"
+            FontStyle="Italic"/>
+
+        <Button
+            Content="Quack!"
+            Width="50"
+            Margin="10"
+            Height="25"
+            Click="Button_Click"/>
+
+
+
+    </StackPanel>
+</Window>
